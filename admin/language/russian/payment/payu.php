@@ -18,6 +18,7 @@ $_['entry_debug_off']    = 'Выключен';
 
 $_['entry_LU']        	 = 'Ссылка Live Update:<br /><span class="help">По-умолчанию стоит стандартная ссылка для украинских мерчантов</span>';
 $_['entry_order_status'] = 'Статус заказа после оплаты:';
+$_['entry_order_status_progress']	= 'Статус заказа во время оплаты счета:';
 $_['entry_currency']     = 'Валюта мерчанта';
 $_['entry_backref']      = 'Ссылка возврата клиента:<br /><span class="help">Если оставить пустым - клиент останется в системе PayU</span>';
 $_['entry_vat']       	 = 'Процент НДС:<br /><span class="help">0 - без НДС</span>';

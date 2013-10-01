@@ -53,7 +53,10 @@
 
            <tr>
             <td><?php echo $entry_backref; ?></td>
-            <td><input type="text" name="payu_backref" value="<?php echo $payu_backref; ?>" /></td>
+            <td>
+              <input type="hidden" name="payu_backref" value="<?php echo HTTPS_CATALOG; ?>?route=checkout/success" />
+              <?php echo HTTPS_CATALOG; ?>?route=checkout/success
+            </td>
           </tr>  
 
 
@@ -66,6 +69,19 @@
             <td><?php echo $entry_language; ?></td>
             <td><input type="text" name="payu_language" value="<?php echo ($payu_language == "") ? "RU" : $payu_language; ?>" /></td>
           </tr> 
+
+          <tr>
+            <td><?php echo $entry_order_status_progress; ?></td>
+            <td><select name="payu_order_status_id_progress">
+                <?php 
+                foreach ($order_statuses as $order_status) { 
+
+                $st = ($order_status['order_status_id'] == $payu_order_status_id_progress) ? ' selected="selected" ' : ""; 
+                ?>
+                <option value="<?php echo $order_status['order_status_id']; ?>" <?= $st ?> ><?php echo $order_status['name']; ?></option>
+                <?php } ?>
+              </select></td>
+          </tr>
 
           <tr>
             <td><?php echo $entry_order_status; ?></td>

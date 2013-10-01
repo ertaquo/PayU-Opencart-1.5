@@ -19,7 +19,7 @@ class ControllerPaymentPayU extends Controller {
 				"entry_merchant", "entry_secretkey", "entry_debug", "entry_LU", "entry_order_status", 
 				"entry_currency", "entry_backref", "entry_vat", "entry_language", "entry_status", 
 				"entry_sort_order", "error_permission", "error_merchant", "error_secretkey",
-				"entry_debug_on", "entry_debug_off" );
+				"entry_debug_on", "entry_debug_off", 'entry_order_status_progress' );
 
 		foreach ($arr as $v) $this->data[$v] = $this->language->get($v);
 		$this->data['button_save'] = $this->language->get('button_save');
@@ -64,7 +64,7 @@ class ControllerPaymentPayU extends Controller {
 		$this->data['order_statuses'] = $this->model_localisation_order_status->getOrderStatuses();
 		
 		$arr = array( "payu_merchant", "payu_secretkey", "payu_debug", "payu_LU", "payu_currency", 
-					  "payu_backref", "payu_vat", "payu_language", "payu_status", "payu_sort_order", "payu_order_status_id" );
+					  "payu_backref", "payu_vat", "payu_language", "payu_status", "payu_sort_order", "payu_order_status_id", "payu_order_status_id_progress" );
 
 		foreach ( $arr as $v )
 		{

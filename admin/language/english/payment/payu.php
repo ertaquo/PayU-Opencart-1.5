@@ -18,6 +18,7 @@ $_['entry_debug_off']    = 'Off';
 
 $_['entry_LU']        	 = 'Link for Live Update:<br /><span class="help">default : for PayU UA </span>';
 $_['entry_order_status'] = 'Order status after payment:';
+$_['entry_order_status_progress']	= 'Order status during the pay bill:';
 $_['entry_currency']     = 'Currency : ';
 $_['entry_backref']      = 'Back refference :<br /><span class="help">if empty - client will stay at PayU page</span>';
 $_['entry_vat']       	 = 'VAT:<br /><span class="help">0 - without VAT</span>';
